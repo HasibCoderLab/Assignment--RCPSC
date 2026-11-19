@@ -6,13 +6,13 @@
 <title>The Importance of Learning ICT</title>
 <style>
   :root {
-    --bg: #f6f3ec;
+    --bg: #f4f6fb;
     --card: #ffffff;
     --text: #1f2937;
     --muted: #6b7280;
-    --primary: #0b5d3b;
-    --accent: #c8102e;
-    --border: #e6dfd0;
+    --primary: #1e3a8a;
+    --accent: #2563eb;
+    --border: #e5e7eb;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -22,11 +22,10 @@
     line-height: 1.7;
   }
   header {
-    background: linear-gradient(135deg, #06402b 0%, #0b5d3b 55%, #138a57 100%);
+    background: var(--primary);
     color: #fff;
     text-align: center;
     padding: 36px 20px 30px;
-    border-bottom: 5px solid #c8102e;
   }
   header .logo { width: 110px; height: 110px; object-fit: contain; background: #fff; border-radius: 50%; padding: 4px; margin-bottom: 12px; }
   header .school { font-size: 1rem; letter-spacing: 0.5px; opacity: 0.9; }
@@ -89,35 +88,13 @@
     margin-top: 12px;
   }
   .box {
-    background: #eef7f1;
-    border: 1px solid #cfe6d8;
-    border-top: 4px solid #c8102e;
+    background: #eff4ff;
+    border: 1px solid #dbe5ff;
     border-radius: 8px;
     padding: 14px 16px;
   }
   .box h3 { color: var(--accent); font-size: 1.05rem; margin-bottom: 4px; }
   .box p { margin: 0; font-size: 0.95rem; text-align: left; }
-
-
-  form { margin-top: 10px; }
-  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .field { margin-bottom: 14px; display: flex; flex-direction: column; }
-  label, .legend { font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem; }
-  input[type="text"], input[type="number"], input[type="email"], select, textarea {
-    font: inherit; padding: 9px 11px; border: 1px solid #cfc7b5; border-radius: 6px; background: #fff; color: var(--text);
-  }
-  input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
-  textarea { resize: vertical; min-height: 90px; }
-  .options { display: flex; flex-wrap: wrap; gap: 6px 18px; }
-  .options label { font-weight: 400; color: var(--text); display: inline-flex; align-items: center; gap: 6px; margin: 0; }
-  .btns { display: flex; gap: 10px; margin-top: 4px; }
-  button { font: inherit; font-weight: 600; padding: 10px 22px; border: none; border-radius: 6px; cursor: pointer; }
-  button[type="submit"] { background: var(--primary); color: #fff; }
-  button[type="submit"]:hover { background: #06402b; }
-  button[type="reset"] { background: #e9e3d3; color: var(--text); }
-  #result { display: none; margin-top: 18px; background: #eef7f1; border: 1px solid #cfe6d8; border-left: 5px solid var(--primary); border-radius: 8px; padding: 14px 18px; }
-  #result h3 { color: var(--primary); margin-bottom: 6px; }
-  #result p { margin-bottom: 4px; text-align: left; }
 
   footer {
     text-align: center;
@@ -130,7 +107,6 @@
     header h1 { font-size: 1.6rem; }
     nav a { display: inline-block; margin: 2px 6px; }
     section { padding: 18px; }
-    .row { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -145,6 +121,7 @@
 
 <nav>
   <a href="#intro">Introduction</a>
+  <a href="#why">Why ICT Matters</a>
 </nav>
 
 <main>
@@ -153,6 +130,7 @@
     <table>
       <tr><td>Name</td><td>Omar Faruk</td></tr>
       <tr><td>Roll</td><td>543</td></tr>
+      <tr><td>Form</td><td>Parul</td></tr>
       <tr><td>Class</td><td>XI</td></tr>
       <tr><td>Institution</td><td>Rajshahi Cantonment Public School &amp; College</td></tr>
     </table>
@@ -172,6 +150,36 @@
     </p>
   </section>
 
+  <section id="why">
+    <h2>Why Learning ICT Is Important</h2>
+    <div class="grid">
+      <div class="box">
+        <h3>Education</h3>
+        <p>Students can learn from online lessons, e-books, videos and research websites at any time.</p>
+      </div>
+      <div class="box">
+        <h3>Career &amp; Jobs</h3>
+        <p>Most modern jobs need computer skills. ICT also opens fields like programming and data analysis.</p>
+      </div>
+      <div class="box">
+        <h3>Communication</h3>
+        <p>Email, video calls and social media let us connect with anyone in the world instantly.</p>
+      </div>
+      <div class="box">
+        <h3>Business</h3>
+        <p>E-commerce, digital payments and online marketing help businesses grow and reach more customers.</p>
+      </div>
+      <div class="box">
+        <h3>Daily Life</h3>
+        <p>Online banking, mobile payments and government e-services save time and make life easier.</p>
+      </div>
+      <div class="box">
+        <h3>National Development</h3>
+        <p>ICT supports the vision of Digital Bangladesh by improving services, transparency and the economy.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="benefits">
     <h2>Benefits of Learning ICT</h2>
     <ul>
@@ -184,90 +192,35 @@
     </ul>
   </section>
 
-  <section id="form">
-    <h2>Student Feedback Form</h2>
-    <p>Fill in this form to share your opinion about learning ICT.</p>
-    <form id="ictForm">
-      <div class="row">
-        <div class="field">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
-        </div>
-        <div class="field">
-          <label for="roll">Roll Number</label>
-          <input type="number" id="roll" name="roll" placeholder="e.g. 543" min="1" required>
-        </div>
-      </div>
-      <div class="row">
-        <div class="field">
-          <label for="cls">Class</label>
-          <select id="cls" name="cls" required>
-            <option value="">-- Select class --</option>
-            <option>IX</option>
-            <option>X</option>
-            <option selected>XI</option>
-            <option>XII</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com">
-        </div>
-      </div>
-      <div class="field">
-        <span class="legend">Do you use ICT in daily life?</span>
-        <div class="options">
-          <label><input type="radio" name="use" value="Yes" checked> Yes</label>
-          <label><input type="radio" name="use" value="Sometimes"> Sometimes</label>
-          <label><input type="radio" name="use" value="No"> No</label>
-        </div>
-      </div>
-      <div class="field">
-        <span class="legend">Where do you use ICT most?</span>
-        <div class="options">
-          <label><input type="checkbox" name="area" value="Study"> Study</label>
-          <label><input type="checkbox" name="area" value="Communication"> Communication</label>
-          <label><input type="checkbox" name="area" value="Entertainment"> Entertainment</label>
-          <label><input type="checkbox" name="area" value="Business"> Business</label>
-        </div>
-      </div>
-      <div class="field">
-        <label for="msg">Why is learning ICT important?</label>
-        <textarea id="msg" name="msg" placeholder="Write your opinion here..."></textarea>
-      </div>
-      <div class="btns">
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-      </div>
-    </form>
-    <div id="result" aria-live="polite"></div>
+  <section id="challenges">
+    <h2>Challenges and Responsibilities</h2>
+    <p>
+      Along with its benefits, ICT also brings some problems. Cyber crime, online fraud,
+      misinformation and screen addiction are serious risks. Many people in rural areas still
+      lack access to devices and the internet.
+    </p>
+    <p>
+      That is why learning ICT must include digital safety and ethics. We should protect our
+      personal data, respect others online, avoid fake news and use technology for good purposes.
+    </p>
+  </section>
+
+  <section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>
+      ICT is the backbone of the modern world. It helps in education, work, business and
+      communication, and it plays a major role in the progress of a country. Every student
+      should learn ICT seriously and use it responsibly. A person with good ICT knowledge
+      can adapt to change, build a better career and contribute to the nation's development.
+    </p>
   </section>
 
 </main>
 
 <footer>
-  Prepared by Omar Faruk &middot; Roll 543 &middot; Class XI<br>
+  Prepared by Omar Faruk &middot; Roll 543 &middot; Form Parul &middot; Class XI<br>
   Rajshahi Cantonment Public School &amp; College
 </footer>
 
-<script>
-  const form = document.getElementById("ictForm");
-  const result = document.getElementById("result");
-  const esc = t => t.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const d = new FormData(form);
-    const areas = d.getAll("area").join(", ") || "None selected";
-    result.innerHTML =
-      "<h3>Thank you, " + esc(d.get("name")) + "!</h3>" +
-      "<p><strong>Roll:</strong> " + esc(d.get("roll")) + " &middot; <strong>Class:</strong> " + esc(d.get("cls")) + "</p>" +
-      "<p><strong>Uses ICT daily:</strong> " + esc(d.get("use")) + "</p>" +
-      "<p><strong>Main areas:</strong> " + esc(areas) + "</p>" +
-      "<p><strong>Opinion:</strong> " + (esc(d.get("msg")) || "-") + "</p>";
-    result.style.display = "block";
-    result.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  });
-  form.addEventListener("reset", function () { result.style.display = "none"; });
-</script>
 </body>
 </html>
